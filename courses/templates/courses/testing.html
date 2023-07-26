@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% block title %}
+    <title>Three Column Layout with Navigation Bar</title>
+    {% endblock %}
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+
+<body>
+    {% include 'courses/navigation.html' %}
+
+    <!-- Main container -->
+    <div style="display: flex; flex-wrap: wrap;">
+
+        <!-- Navigation bar -->
+        <div id="navbar" style="background-color: #333; color: #fff; padding-bottom:8px;  width: 100%;height:50px">
+            <h2>Navigation Bar</h2>
+            <!-- Add your navigation links or content here -->
+        </div>
+
+        <!-- Left column -->
+        <div id="left-column" style="background-color: #f1f1f1; flex: 1; padding: 10px;">
+            <ul style="list-style: none; padding: 0;">
+                <!-- Add your navigation links here -->
+
+              {% include 'courses/achor.html' %}
+
+                <!-- Add other navigation links here -->
+            </ul>
+            <!-- Add your content for the left column here -->
+        </div>
+
+        <!-- Right column -->
+        <div id="right-column" style="background-color: #ddd; flex: 8; padding: 10px;">
+
+        {% block content %}
+        {% endblock %}
+
+            <!-- Add your content for the right column here -->
+        </div>
+
+    </div>
+
+    {% include 'courses/footer.html' %}
+</body>
+
+</html>

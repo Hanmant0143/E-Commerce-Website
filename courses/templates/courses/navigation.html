@@ -1,0 +1,79 @@
+
+
+<!DOCTYPE html>
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+        /* Default style for the navigation bar */
+        .navbar {
+            background-color: green;
+            padding: 10px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Style for navigation links in the desktop view */
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        /* Media query for mobile devices with a minimum width of 769px */
+        @media screen and (min-width: 769px) {
+            /* Hide the menu button icon on larger screens */
+            .menu-icon {
+                display: none;
+            }
+
+            /* Show the navigation links in the desktop view */
+            .navbar a {
+                display: block;
+            }
+        }
+
+        /* Media query for mobile devices with a maximum width of 768px */
+        @media screen and (max-width: 768px) {
+            /* Hide the navigation links */
+            .navbar a {
+                display: none;
+            }
+
+            /* Show the menu button icon (you can use any icon library like Font Awesome) */
+            .menu-icon {
+                display: block;
+                color: #fff;
+                font-size: 24px;
+                margin-right: 10px;
+            }
+
+            /* Show the navigation links in a vertical dropdown menu when menu-icon is clicked */
+            .navbar.show-links a {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="navbar" style="background-color: green; padding: 10px; color: #fff;">
+
+        <!-- Navigation links -->
+        <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Home</a>
+        <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">About</a>
+        <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Services</a>
+        <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Contact</a>
+        <div class="menu-icon">&#9776;</div>
+    </div>
+ <script>
+        // JavaScript to toggle the class 'show-links' when menu-icon is clicked
+        const menuIcon = document.querySelector('.menu-icon');
+        const navbarLinks = document.querySelector('.navbar');
+
+        menuIcon.addEventListener('click', () => {
+            navbarLinks.classList.toggle('show-links');
+        });
+    </script>
+</body>
+</html>

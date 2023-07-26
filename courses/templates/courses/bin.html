@@ -1,0 +1,170 @@
+ <div style="background-color: green; padding: 10px; color: #fff;">
+
+        <!-- Navigation links -->
+        <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Home</a>
+        <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">About</a>
+        <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Services</a>
+        <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Contact</a>
+
+    </div>
+
+
+<!-- --------------------------------------------------------------------------------------------->
+
+
+
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Three Column Layout with Navigation Bar</title>
+    {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+</head>
+
+<body>
+     {% include 'courses/navigation.html' %}
+    <!-- Main container -->
+    <div style="display: flex; flex-wrap: wrap;">
+
+        <!-- Navigation bar -->
+        <div id="navbar" style="background-color: #333; color: #fff; padding-bottom:8px;  width: 100%;height:50px">
+            <h2>Navigation Bar</h2>
+
+            <!-- Add your navigation links or content here -->
+        </div>
+
+        <!-- Left column -->
+        <div id="left-column" style="background-color: #f1f1f1; flex: 1; padding: 10px;">
+
+    <ul style="list-style: none; padding: 0;">
+        <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+            <a href="/navgation/bin/home01.html" class="divListAnchor link" style="text-decoration: none; color: #333; background-color: #f1f1f1; padding: 10px 20px; border-radius: 5px;">HTML HOME</a>
+        </li>
+        <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+            <a href="/navgation/home/html/introduction02.html" class="divListAnchor disabled-link link" style="text-decoration: none; color: #fff; background-color: #777; padding: 10px 20px; border-radius: 5px;">HTML Introduction</a>
+        </li>
+        <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+            <a href="/navgation/home/html/editors03.html" class="divListAnchor link" style="text-decoration: none; color: #333; background-color: #f1f1f1; padding: 10px 20px; border-radius: 5px;">HTML Editors</a>
+        </li>
+        <li style="display: inline-block; margin-right: 10px;margin-bottom: 5px;">
+            <a href="/navgation/home/html/basic04.html" class="divListAnchor link" style="text-decoration: none; color: #333; background-color: #f1f1f1; padding: 10px 20px; border-radius: 5px;">HTML Basic</a>
+        </li>
+        <li style="display: inline-block; margin-right: 10px;">
+            <a href="/navgation/home/html/elements05.html" class="divListAnchor link" style="text-decoration: none; color: #333; background-color: #f1f1f1; padding: 10px 20px; border-radius: 5px;">HTML Elements</a>
+        </li>
+        <li style="display: inline-block; margin-right: 10px;">
+            <a href="/navgation/home/html/attributes06.html" class="divListAnchor link" style="text-decoration: none; color: #333; background-color: #f1f1f1; padding: 10px 20px; border-radius: 5px;">HTML Attributes</a>
+        </li>
+        <li style="display: inline-block; margin-right: 10px;">
+            <a href="/navgation/home/html/headings07.html" class="divListAnchor link" style="text-decoration: none; color: #333; background-color: #f1f1f1; padding: 10px 20px; border-radius: 5px;">HTML Heading</a>
+        </li>
+        <li style="display: inline-block; margin-right: 10px;">
+            <a href="/navgation/home/html/paragraphs08.html" class="divListAnchor link" style="text-decoration: none; color: #333; background-color: #f1f1f1; padding: 10px 20px; border-radius: 5px;">HTML Paragraphs</a>
+        </li>
+        <li style="display: inline-block; margin-right: 10px;">
+            <a href="/navgation/home/html/styles09.html" class="divListAnchor link" style="text-decoration: none; color: #333; background-color: #f1f1f1; padding: 10px 20px; border-radius: 5px;">HTML Styles</a>
+        </li>
+        <li style="display: inline-block; margin-right: 10px;">
+            <a href="/navgation/home/html/formatting10.html" class="divListAnchor link" style="text-decoration: none; color: #333; background-color: #f1f1f1; padding: 10px 20px; border-radius: 5px;">HTML Formatting</a>
+        </li>
+        <li style="display: inline-block; margin-right: 10px;">
+            <a href="/navgation/home/html/quotations11.html" class="divListAnchor link" style="text-decoration: none; color: #333; background-color: #f1f1f1; padding: 10px 20px; border-radius: 5px;">HTML Quotations</a>
+        </li>
+        <li style="display: inline-block; margin-right: 10px;">
+            <a href="/navgation/home/html/comments12.html" class="divListAnchor link" style="text-decoration: none; color: #333; background-color: #f1f1f1; padding: 10px 20px; border-radius: 5px;">HTML Comments</a>
+        </li>
+        <li style="display: inline-block; margin-right: 10px;">
+            <a href="/navgation/home/html/colors13.html" class="divListAnchor link" style="text-decoration: none; color: #333; background-color: #f1f1f1; padding: 10px 20px; border-radius: 5px;">HTML Colors</a>
+        </li>
+        <li style="display: inline-block; margin-right: 10px;">
+            <a href="/navgation/home/html/css14.html" class="divListAnchor link" style="text-decoration: none; color: #333; background-color: #f1f1f1; padding: 10px 20px; border-radius: 5px;">HTML CSS</a>
+        </li>
+        <li style="display: inline-block; margin-right: 10px;">
+            <a href="/navgation/home/html/links15.html" class="divListAnchor link" style="text-decoration: none; color: #333; background-color: #f1f1f1; padding: 10px 20px; border-radius: 5px;">HTML Links</a>
+        </li>
+    </ul>
+
+
+            <!-- Add your content for the left column here -->
+        </div>
+
+        <!-- Right column -->
+        <div id="right-column" style="background-color: #ddd; flex: 8; padding: 10px;">
+            <h2>HTML Introduction</h2>
+
+<hr>
+                   <p>HTML is the standard markup language for creating Web pages.</p>
+                   <p>HTML stands for Hyper Text Markup Language</p>
+<hr>
+                   <p>HTML (Hypertext Markup Language) is a markup language used for creating web pages and other online content that can be displayed in a web browser. It consists of a series of tags and attributes that are used to structure and format the content of a web page. HTML documents can include text, images, video, audio, forms, and other types of media.</p>
+                   <p>An HTML document is structured using elements, which are enclosed by opening and closing tags. The opening tag is the name of the element surrounded by angle brackets (&lt;  &gt;) The closing tag is the same as the opening tag, but with an extra forward slash (/) before the element name.</p>
+                   <p>HTML documents also have a head section and a body section. The head section contains information about the document itself, such as the title, author, and other metadata. The body section contains the actual content that will be displayed in the web page.</p>
+                   <p>Overall, HTML is a fundamental building block of web development and an essential skill for anyone who wants to create websites or online content.</p>
+<hr>
+                <h2>What is HTML?</h2>
+                   <p>HTML stands for Hypertext Markup Language. It is the standard markup language used to create web pages and other online content that can be displayed in a web browser.</p>
+                   <p>HTML uses a series of tags and attributes to structure content on a web page. Tags are enclosed in angle brackets (&lt;  &gt;) and indicate the beginning and end of an element, such as a paragraph or a heading. Attributes provide additional information about an element, such as the color or size of text.</p>
+                   <p>Web browsers use HTML to interpret and display web pages, allowing users to interact with and access online content. HTML is a fundamental technology of web development, and learning HTML is often the first step towards becoming a web developer.</p>
+
+
+
+            <!-- Add your content for the right column here -->
+        </div>
+
+    </div>
+
+     {% include 'courses/footer.html' %}
+</body>
+
+</html>
+
+<!-- ----------------------------------------------------------------------------------->
+   <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+                    <a href="/courses/html-introduction02"  class="divListAnchor disabled-link link" style="text-decoration: none; color: #fff; background-color: #777; padding: 1px 1px; border-radius: 5px;">HTML Introduction</a>
+                </li>
+                 <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+                    <a href="/navgation/home/html/introduction02.html" class="divListAnchor disabled-link link" style="text-decoration: none; color: #fff; background-color: #777; padding: 1px 1px; border-radius: 5px;">HTML Introduction</a>
+                </li>
+                 <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+                    <a href="/navgation/home/html/introduction02.html" class="divListAnchor disabled-link link" style="text-decoration: none; color: #fff; background-color: #777; padding: 1px 1px; border-radius: 5px;">HTML Introduction</a>
+                </li>
+                 <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+                    <a href="/navgation/home/html/introduction02.html" class="divListAnchor disabled-link link" style="text-decoration: none; color: #fff; background-color: #777; padding: 1px 1px; border-radius: 5px;">HTML Introduction</a>
+                </li>
+                 <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+                    <a href="/navgation/home/html/introduction02.html" class="divListAnchor disabled-link link" style="text-decoration: none; color: #fff; background-color: #777; padding: 1px 1px; border-radius: 5px;">HTML Introduction</a>
+                </li>
+                 <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+                    <a href="/navgation/home/html/introduction02.html" class="divListAnchor disabled-link link" style="text-decoration: none; color: #fff; background-color: #777; padding: 1px 1px; border-radius: 5px;">HTML Introduction</a>
+                </li>
+                 <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+                    <a href="/navgation/home/html/introduction02.html" class="divListAnchor disabled-link link" style="text-decoration: none; color: #fff; background-color: #777; padding: 1px 1px; border-radius: 5px;">HTML Introduction</a>
+                </li>
+                 <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+                    <a href="/navgation/home/html/introduction02.html" class="divListAnchor disabled-link link" style="text-decoration: none; color: #fff; background-color: #777; padding: 1px 1px; border-radius: 5px;">HTML Introduction</a>
+                </li>
+                 <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+                    <a href="/navgation/home/html/introduction02.html" class="divListAnchor disabled-link link" style="text-decoration: none; color: #fff; background-color: #777; padding: 1px 1px; border-radius: 5px;">HTML Introduction</a>
+                </li>
+                 <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+                    <a href="/navgation/home/html/introduction02.html" class="divListAnchor disabled-link link" style="text-decoration: none; color: #fff; background-color: #777; padding: 1px 1px; border-radius: 5px;">HTML Introduction</a>
+                </li>
+                 <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+                    <a href="/navgation/home/html/introduction02.html" class="divListAnchor disabled-link link" style="text-decoration: none; color: #fff; background-color: #777; padding: 1px 1px; border-radius: 5px;">HTML Introduction</a>
+                </li>
+                 <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+                    <a href="/navgation/home/html/introduction02.html" class="divListAnchor disabled-link link" style="text-decoration: none; color: #fff; background-color: #777; padding: 1px 1px; border-radius: 5px;">HTML Introduction</a>
+                </li>
+                 <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+                    <a href="/navgation/home/html/introduction02.html" class="divListAnchor disabled-link link" style="text-decoration: none; color: #fff; background-color: #777; padding: 1px 1px; border-radius: 5px;">HTML Introduction</a>
+                </li>
+                 <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+                    <a href="/navgation/home/html/introduction02.html" class="divListAnchor disabled-link link" style="text-decoration: none; color: #fff; background-color: #777; padding: 1px 1px; border-radius: 5px;">HTML Introduction</a>
+                </li>
+                 <li style="display: inline-block; margin-right: 10px;margin-bottom: 20px;">
+                    <a href="/navgation/home/html/introduction02.html" class="divListAnchor disabled-link link" style="text-decoration: none; color: #fff; background-color: #777; padding: 1px 1px; border-radius: 5px;">HTML Introduction</a>
+                </li>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------>
