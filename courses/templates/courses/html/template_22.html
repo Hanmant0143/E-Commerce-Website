@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 23: HTML Classes</title>
+</head>
+<body>
+  <h1>Module 23: HTML Classes</h1>
+
+  <p><strong>1. Introduction to HTML Classes:</strong></p>
+  <p>In HTML, classes are used to apply specific styles to one or more HTML elements. Classes provide a way to group elements and target them with CSS for consistent styling across the webpage. By assigning classes to elements, you can easily apply custom styles to individual elements or groups of elements without affecting other parts of the page.</p>
+
+  <p><strong>2. Creating a Class:</strong></p>
+  <p>To create a class, you use the "class" attribute on an HTML element and give it a name. The name should be unique and meaningful to describe the purpose of the class. For example:</p>
+  <pre>&lt;p class="highlighted-text"&gt;This is a paragraph with a custom class.&lt;/p&gt;</pre>
+
+  <p><strong>3. Applying Styles with CSS:</strong></p>
+  <p>Once you have created a class, you can define its styles using CSS. In a separate CSS file or within a &lt;style&gt; block, use the class selector (preceded by a period) to target elements with that class. For example:</p>
+  <pre>&lt;style&gt;
+.highlighted-text {
+  background-color: yellow;
+  font-weight: bold;
+}
+&lt;/style&gt;</pre>
+
+  <p><strong>4. Applying Multiple Classes:</strong></p>
+  <p>An element can have multiple classes, allowing you to combine different styles. Separate class names with a space when applying multiple classes to an element. For example:</p>
+  <pre>&lt;p class="highlighted-text large-font"&gt;This paragraph has multiple classes.&lt;/p&gt;</pre>
+
+  <p><strong>5. Class vs. ID:</strong></p>
+  <p>While classes are used to apply styles to multiple elements, IDs are used to uniquely identify individual elements. Unlike IDs, you can apply the same class to multiple elements throughout the page.</p>
+
+  <p><strong>6. Reusability and Consistency:</strong></p>
+  <p>Using classes promotes code reusability and ensures consistency in the appearance of similar elements. By defining styles once in a class, you can easily apply those styles to multiple elements as needed.</p>
+
+  <p><strong>7. Best Practices:</strong></p>
+  <ul>
+    <li>Use classes to group elements that share similar styles or serve the same purpose.</li>
+    <li>Give classes meaningful names to make the code more readable and maintainable.</li>
+    <li>Avoid using inline styles and use classes for better separation of concerns.</li>
+    <li>Combine classes with other selectors (e.g., tag names or IDs) to create specific and targeted styles.</li>
+  </ul>
+
+  <p><strong>8. Practical Exercises:</strong></p>
+  <ul>
+    <li>Create a class for buttons and apply styles for consistent button appearance throughout the website.</li>
+    <li>Use classes to style different types of alerts (e.g., success, warning, error) with distinct colors and icons.</li>
+    <li>Experiment with combining multiple classes to apply compound styles to specific elements.</li>
+  </ul>
+
+  <p>Using classes effectively in HTML and CSS allows you to achieve consistent styling and better organization of your webpage's elements. By following best practices and combining classes with other selectors, you can create visually appealing and user-friendly web pages.</p>
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 24: HTML Id</title>
+</head>
+<body>
+  <h1>Module 24: HTML Id</h1>
+
+  <p><strong>1. Introduction to HTML Id:</strong></p>
+  <p>In HTML, the "id" attribute is used to uniquely identify individual elements on a webpage. Unlike classes, which can be applied to multiple elements, each element can have only one unique ID within the HTML document. The "id" attribute is particularly useful when you need to target a specific element for styling or manipulation using CSS or JavaScript.</p>
+
+  <p><strong>2. Creating an ID:</strong></p>
+  <p>To create an ID, you use the "id" attribute on an HTML element and give it a unique name. The name should be descriptive and related to the element's purpose. For example:</p>
+  <pre>&lt;p id="intro-text"&gt;This is an introductory paragraph.&lt;/p&gt;</pre>
+
+  <p><strong>3. Applying Styles with CSS:</strong></p>
+  <p>Similar to classes, you can use the ID selector (preceded by a hash #) in CSS to target elements with a specific ID. For example:</p>
+  <pre>&lt;style&gt;
+#intro-text {
+  font-size: 18px;
+  color: #333;
+}
+&lt;/style&gt;</pre>
+
+  <p><strong>4. JavaScript Manipulation:</strong></p>
+  <p>The "id" attribute is commonly used in JavaScript to manipulate specific elements on a webpage. You can use JavaScript to retrieve elements by their ID and perform actions such as changing content, applying styles, or adding event listeners.</p>
+
+  <p><strong>5. Unique Identification:</strong></p>
+  <p>Each element should have a unique ID within the HTML document. Avoid using the same ID for multiple elements, as it can lead to conflicts and unexpected behavior in CSS and JavaScript.</p>
+
+  <p><strong>6. Class vs. ID:</strong></p>
+  <p>While classes are used for applying styles to multiple elements, IDs are used for uniquely identifying individual elements. Use classes when you want to apply the same styles to multiple elements and use IDs when you need to target a specific element for unique styling or manipulation.</p>
+
+  <p><strong>7. Best Practices:</strong></p>
+  <ul>
+    <li>Give IDs descriptive and meaningful names to make the code more readable and maintainable.</li>
+    <li>Use IDs sparingly and only when necessary for specific element identification.</li>
+    <li>Avoid using IDs for styling purposes; use classes for applying styles to multiple elements.</li>
+    <li>Ensure that IDs are unique and not duplicated within the same HTML document.</li>
+  </ul>
+
+  <p><strong>8. Practical Exercises:</strong></p>
+  <ul>
+    <li>Add unique IDs to important sections of a webpage and use CSS to style them differently from other elements.</li>
+    <li>Implement JavaScript functionality that interacts with elements based on their IDs, such as showing/hiding content or changing element attributes.</li>
+    <li>Experiment with combining class and ID selectors in CSS to create targeted styles for specific elements.</li>
+  </ul>
+
+  <p>Understanding how to use the "id" attribute in HTML allows you to uniquely identify and manipulate individual elements on a webpage. By using IDs wisely and following best practices, you can efficiently style and interact with elements to enhance the overall user experience.</p>
+</body>
+</html>
+

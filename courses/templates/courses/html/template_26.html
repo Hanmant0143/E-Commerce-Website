@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 27: HTML File Paths</title>
+</head>
+<body>
+  <h1>Module 27: HTML File Paths</h1>
+
+  <p><strong>1. Understanding File Paths in HTML:</strong></p>
+  <p>File paths in HTML are used to specify the location of external resources such as images, stylesheets, scripts, and other files. A file path tells the browser where to find the resource so that it can be properly displayed or executed on the web page. There are two types of file paths: relative paths and absolute paths.</p>
+
+  <p><strong>2. Relative Paths:</strong></p>
+  <p>Relative paths are specified relative to the current location of the HTML file. They are typically shorter and more flexible than absolute paths, as they allow you to move files and directories around without breaking links. Relative paths are used when the linked resource is located in the same directory or in a subdirectory of the current HTML file.</p>
+  <pre>
+    &lt;img src="images/picture.jpg" alt="Picture"&gt;
+    &lt;link rel="stylesheet" href="styles/styles.css"&gt;
+    &lt;script src="scripts/script.js"&gt;&lt;/script&gt;
+  </pre>
+
+  <p><strong>3. Absolute Paths:</strong></p>
+  <p>Absolute paths, on the other hand, specify the full URL or file path to the resource from the root of the website or the file system. They are used when linking to resources on different domains or when you want to specify an exact path regardless of the current location of the HTML file.</p>
+  <pre>
+    &lt;img src="https://www.example.com/images/picture.jpg" alt="Picture"&gt;
+    &lt;link rel="stylesheet" href="https://www.example.com/styles/styles.css"&gt;
+    &lt;script src="https://www.example.com/scripts/script.js"&gt;&lt;/script&gt;
+  </pre>
+
+  <p><strong>4. File Paths and Directory Structure:</strong></p>
+  <p>Understanding the directory structure of your website is essential when using file paths. If the linked resource is located in a parent or child directory, you need to adjust the path accordingly.</p>
+  <pre>
+    &lt;!-- Current directory --&gt;
+    &lt;a href="about.html"&gt;About Us&lt;/a&gt;
+
+    &lt;!-- Subdirectory --&gt;
+    &lt;a href="pages/contact.html"&gt;Contact Us&lt;/a&gt;
+
+    &lt;!-- Parent directory --&gt;
+    &lt;a href="../index.html"&gt;Home&lt;/a&gt;
+  </pre>
+
+  <p><strong>5. Best Practices:</strong></p>
+  <ul>
+    <li>Use relative paths whenever possible, as they are more portable and make it easier to maintain your website.</li>
+    <li>Double-check file paths to ensure they are accurate and correctly linked to the intended resources.</li>
+    <li>Consider using root-relative paths when necessary to ensure resource availability across different directories.</li>
+    <li>For resources hosted on external servers, always provide full URLs to avoid broken links.</li>
+  </ul>
+
+  <p><strong>6. Practical Exercises:</strong></p>
+  <ul>
+    <li>Create a web page with multiple image links using both relative and absolute paths.</li>
+    <li>Build a navigation menu with links to different pages on your website using relative paths.</li>
+    <li>Experiment with moving files and directories and observe how the links behave with different file paths.</li>
+  </ul>
+
+  <p>Understanding file paths in HTML is crucial for properly linking resources and ensuring your website functions as expected. Whether you use relative paths for flexibility or absolute paths for precise links, mastering file paths is essential for web development.</p>
+</body>
+</html>
+```

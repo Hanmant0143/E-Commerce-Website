@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 30: HTML Responsive</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      color: #fff;
+      padding: 5px;
+      text-align: center;
+    }
+
+    section {
+      margin: 20px;
+    }
+
+    article {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Media Query for Responsive Design */
+    @media only screen and (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Website</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section>
+    <article>
+      <h2>Introduction to Responsive Web Design</h2>
+      <p>Responsive web design is an approach that aims to make websites adapt and respond to different screen sizes and devices. With the increasing use of smartphones, tablets, and various screen sizes, it is crucial to ensure that websites look and function well across all devices.</p>
+      <p>The importance of responsive design lies in providing an optimal user experience, regardless of the device used to access the website. It enhances accessibility and readability, reduces the need for zooming or horizontal scrolling, and improves the website's overall performance.</p>
+    </article>
+
+    <article>
+      <h2>Implementing Responsiveness with Media Queries</h2>
+      <p>Media queries are a fundamental aspect of responsive web design. They allow us to apply different styles based on the characteristics of the device or screen size. By using media queries, you can adapt the layout, font sizes, and other elements to create a seamless experience for users on various devices.</p>
+      <p>Here's an example of a media query that adjusts the navigation bar for smaller screens:</p>
+      <pre>@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  nav a {
+    margin: 5px;
+  }
+}</pre>
+      <p>In this example, when the screen width is 600 pixels or less, the navigation links will be displayed in a column rather than a row, and the links will have some spacing to improve touch interactions on small screens.</p>
+    </article>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 My Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 26: HTML JavaScript</title>
+</head>
+<body>
+  <h1>Module 26: HTML JavaScript</h1>
+
+  <p><strong>1. Introduction to JavaScript in HTML:</strong></p>
+  <p>JavaScript is a versatile and powerful programming language that is commonly used to add interactivity and dynamic behavior to web pages. In HTML, you can include JavaScript code directly within the document using script tags (<code>&lt;script&gt;</code>). JavaScript allows you to respond to user actions, manipulate the DOM (Document Object Model), validate forms, and perform various other tasks that enhance the user experience.</p>
+
+  <p><strong>2. Adding JavaScript to HTML:</strong></p>
+  <p>To include JavaScript code in an HTML document, place the script tags within the <code>&lt;head&gt;</code> or <code>&lt;body&gt;</code> section. The <code>src</code> attribute is used to link an external JavaScript file if your code is in a separate file.</p>
+  <pre>
+    &lt;head&gt;
+      &lt;script src="script.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+  </pre>
+  <pre>
+    &lt;body&gt;
+      &lt;script&gt;
+        // Your JavaScript code goes here
+      &lt;/script&gt;
+    &lt;/body&gt;
+  </pre>
+
+  <p><strong>3. Basic JavaScript Examples:</strong></p>
+  <p>Here are some basic JavaScript examples that demonstrate its interactivity:</p>
+  <ul>
+    <li><strong>Displaying an Alert:</strong> Show an alert box with a message when the page loads.</li>
+    <pre>&lt;script&gt;
+      window.onload = function() {
+        alert("Welcome to our website!");
+      };
+    &lt;/script&gt;</pre>
+
+    <li><strong>Handling Button Click:</strong> Change the text of a button when it is clicked.</li>
+    <pre>&lt;button id="clickButton" onclick="changeText()"&gt;Click Me&lt;/button&gt;</pre>
+    <pre>&lt;script&gt;
+      function changeText() {
+        document.getElementById("clickButton").innerHTML = "Clicked!";
+      }
+    &lt;/script&gt;</pre>
+
+    <li><strong>Input Validation:</strong> Validate a form field before submitting the form.</li>
+    <pre>&lt;form onsubmit="return validateForm()"&gt;
+      &lt;input type="text" id="name" required&gt;
+      &lt;input type="submit" value="Submit"&gt;
+    &lt;/form&gt;</pre>
+    <pre>&lt;script&gt;
+      function validateForm() {
+        var nameInput = document.getElementById("name").value;
+        if (nameInput === "") {
+          alert("Please enter your name.");
+          return false;
+        }
+        return true;
+      }
+    &lt;/script&gt;</pre>
+  </ul>
+
+  <p><strong>4. Best Practices:</strong></p>
+  <ul>
+    <li>Always include your JavaScript code within script tags to avoid compatibility issues.</li>
+    <li>Place script tags at the end of the body section to ensure that the HTML content is loaded before running the JavaScript, which can improve page performance.</li>
+    <li>Use descriptive function and variable names to make your code more readable and maintainable.</li>
+    <li>Regularly test your JavaScript code across different browsers to ensure cross-browser compatibility.</li>
+  </ul>
+
+  <p><strong>5. Practical Exercises:</strong></p>
+  <ul>
+    <li>Create a simple quiz with JavaScript that displays questions and calculates the score.</li>
+    <li>Add form validation to a contact form to ensure all required fields are filled before submission.</li>
+    <li>Implement a responsive image gallery that changes images when the user clicks on thumbnails.</li>
+  </ul>
+
+  <p>JavaScript is a fundamental part of web development, enabling dynamic and interactive web pages. By understanding the basics of JavaScript, you can create more engaging and user-friendly experiences for your website visitors.</p>
+</body>
+</html>

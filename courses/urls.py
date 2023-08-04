@@ -1,8 +1,51 @@
 from django.urls import path
-from .views import courses,testing,introduction02
+from .views import courses,testing
+from . import views
 app_name = 'courses'
 urlpatterns= {
     path('',courses,name="courses"),
     path('testing/',testing,name="testing"),
-    path('html-introduction02/',introduction02,name="introduction02")
+    path('html-template-1/', views.template_1, name='template_1'),
+    path('html-template-2/', views.template_2, name='template_2'),
+    path('html-template-3/', views.template_3, name='template_3'),
+    path('html-template-4/', views.template_4, name='template_4'),
+    path('html-template-5/', views.template_5, name='template_5'),
+    path('html-template-6/', views.template_6, name='template_6'),
+    path('html-template-7/', views.template_7, name='template_7'),
+    path('html-template-8/', views.template_8, name='template_8'),
+    path('html-template-9/', views.template_9, name='template_9'),
+    path('html-template-10/', views.template_10, name='template_10'),
+    path('html-template-11/', views.template_11, name='template_11'),
+    path('html-template-12/', views.template_12, name='template_12'),
+    path('html-template-13/', views.template_13, name='template_13'),
+    path('html-template-14/', views.template_14, name='template_14'),
+    path('html-template-15/', views.template_15, name='template_15'),
+    path('html-template-16/', views.template_16, name='template_16'),
+    path('html-template-17/', views.template_17, name='template_17'),
+    path('html-template-18/', views.template_18, name='template_18'),
+    path('html-template-19/', views.template_19, name='template_19'),
+    path('html-template-20/', views.template_20, name='template_20'),
+    path('html-template-21/', views.template_21, name='template_21'),
+    path('html-template-22/', views.template_22, name='template_22'),
+    path('html-template-23/', views.template_23, name='template_23'),
+    path('html-template-24/', views.template_24, name='template_24'),
+    path('html-template-25/', views.template_25, name='template_25'),
+    path('html-template-26/', views.template_26, name='template_26'),
+    path('html-template-27/', views.template_27, name='template_27'),
+    path('html-template-28/', views.template_28, name='template_28'),
+    path('html-template-29/', views.template_29, name='template_29'),
+    path('html-template-30/', views.template_30, name='template_30'),
+    path('html-template-31/', views.template_31, name='template_31'),
+    path('html-template-32/', views.template_32, name='template_32'),
+    path('html-template-33/', views.template_33, name='template_33'),
+    path('html-template-34/', views.template_34, name='template_34'),
+    path('html-template-35/', views.template_35, name='template_35'),
+    path('html-template-36/', views.template_36, name='template_36'),
+    path('html-template-37/', views.template_37, name='template_37'),
+    path('html-template-38/', views.template_38, name='template_38'),
+    path('html-template-39/', views.template_39, name='template_39'),
+    path('html-template-40/', views.template_40, name='template_40'),
+
 }
+
+

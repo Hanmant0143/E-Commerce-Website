@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Module 12: HTML Quotations</title>
+</head>
+
+<body>
+    <h1>Module 12: HTML Quotations</h1>
+
+    <h2>1. Introduction to HTML Quotations:</h2>
+    <p>Quoting external content and providing proper citations are essential aspects of web development. HTML offers specific elements to represent quotations, both short and long, and cite the original sources accurately. This module introduces the blockquote and q elements, which help maintain the integrity and credibility of content presented on web pages.</p>
+
+    <h2>2. The blockquote Element:</h2>
+    <p>The blockquote element is used to represent longer quotations that span multiple lines or paragraphs. It visually sets the quoted text apart from the surrounding content and typically indents the quoted content for emphasis. When using the blockquote element, it is crucial to include the proper citation, either within the element using the cite attribute or as a separate citation element (&lt;cite&gt;).</p>
+    <pre><code>&lt;blockquote cite="https://example.com/article"&gt;
+  &lt;p&gt;"A journey of a thousand miles begins with a single step."&lt;/p&gt;
+  &lt;cite&gt;— Lao Tzu&lt;/cite&gt;
+&lt;/blockquote&gt;</code></pre>
+
+    <h2>3. The q Element:</h2>
+    <p>The q element represents short inline quotations within a paragraph or sentence. It is used for shorter quotes that do not require a separate block. Like the blockquote element, the q element also supports the cite attribute to provide the original source of the quote.</p>
+    <pre><code>&lt;p&gt;She said, &lt;q cite="https://example.com/quote"&gt;Be yourself; everyone else is already taken.&lt;/q&gt; — Oscar Wilde&lt;/p&gt;</code></pre>
+
+    <h2>4. Citing Sources:</h2>
+    <p>When using quotations, it is essential to cite the original sources accurately. The cite attribute within blockquote and q elements is used to link to the source of the quote. The URL provided should lead to the webpage or document containing the quoted content.</p>
+    <p>It is crucial to respect copyright and intellectual property rights when using quotations from external sources. Always seek permission when necessary, and attribute quotes to their rightful authors or sources.</p>
+
+    <h2>5. Nested Quotations:</h2>
+    <p>HTML allows nesting quotations within each other, useful when providing quotes within quotes. You can use a combination of blockquote and q elements to achieve this.</p>
+    <pre><code>&lt;blockquote&gt;
+  &lt;p&gt;"Knowledge is power."&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;&lt;q cite="https://example.com/quote"&gt;With great power comes great responsibility.&lt;/q&gt;&lt;/p&gt;
+    &lt;cite&gt;— Voltaire&lt;/cite&gt;
+  &lt;/blockquote&gt;
+  &lt;cite&gt;— Sir Francis Bacon&lt;/cite&gt;
+&lt;/blockquote&gt;</code></pre>
+
+    <h2>6. Accessibility Considerations:</h2>
+    <p>When using blockquote and q elements, consider accessibility for all users. Ensure that screen readers can identify and read the quoted content correctly. Avoid using these elements solely for stylistic purposes, as they carry semantic meaning.</p>
+    <p>Provide meaningful citations and ensure that the source URLs are accurate and accessible. Screen readers will use this information to announce the source of the quoted content to visually impaired users.</p>
+
+    <h2>7. Practical Application:</h2>
+    <p>Utilize the blockquote and q elements in real-world scenarios to represent quotations and citations on your web pages. Experiment with different styles and layouts to create visually appealing and accessible quotations.</p>
+
+    <h2>8. Challenges (For experienced students):</h2>
+    <ul>
+        <li>Create a web page that showcases various quotations from different authors and sources using the blockquote and q elements.</li>
+        <li>Implement custom CSS styles to customize the appearance of blockquotes and inline quotations.</li>
+    </ul>
+</body>
+
+</html>
+

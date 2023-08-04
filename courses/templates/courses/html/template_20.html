@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 21: HTML Lists</title>
+</head>
+<body>
+  <h1>Module 21: HTML Lists</h1>
+
+  <p><strong>1. Introduction to HTML Lists:</strong></p>
+  <p>HTML lists are used to organize and structure content into various list formats. Lists help present information in a clear and logical manner, making it easier for users to understand and navigate the content. There are two main types of lists in HTML: ordered lists and unordered lists.</p>
+
+  <p><strong>2. Ordered Lists:</strong></p>
+  <p>An ordered list, represented by the &lt;ol&gt; element, is used to create a numbered list of items. Each item in the list is represented by the &lt;li&gt; (list item) element. By default, ordered lists use Arabic numerals (1, 2, 3, etc.) to number the list items. However, you can customize the numbering style using CSS.</p>
+  <pre>&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;/ol&gt;</pre>
+
+  <p><strong>3. Unordered Lists:</strong></p>
+  <p>An unordered list, represented by the &lt;ul&gt; element, is used to create a bulleted list of items. Like ordered lists, each item is represented by the <li> element. By default, unordered lists use bullet points to mark each list item. As with ordered lists, you can customize the bullet style using CSS.</p>
+  <pre>&lt;ul&gt;
+    &lt;li&gt;Item A&lt;/li&gt;
+    &lt;li&gt;Item B&lt;/li&gt;
+    &lt;li&gt;Item C&lt;/li&gt;
+  &lt;/ul&gt;</pre>
+
+  <p><strong>4. Nested Lists:</strong></p>
+  <p>HTML allows you to create nested lists, which are lists within lists. This is useful for organizing content hierarchically. To create nested lists, simply include a new &lt;ul&gt; or &lt;ol&gt; element within an existing &lt;li&gt; element.</p>
+  <pre>&lt;ol&gt;
+    &lt;li&gt;First Level Item 1
+      &lt;ul&gt;
+        &lt;li&gt;Second Level Item 1&lt;/li&gt;
+        &lt;li&gt;Second Level Item 2&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;First Level Item 2&lt;/li&gt;
+  &lt;/ol&gt;</pre>
+
+  <p><strong>5. Styling Lists:</strong></p>
+  <p>You can use CSS to style list elements and customize their appearance. You can change the bullet or numbering style, add margins or padding, adjust the font size, and more to match your website's design.</p>
+  <pre>&lt;style&gt;
+    ul {
+      list-style-type: circle; /* Change bullet style */
+    }
+    ol {
+      list-style-type: lower-roman; /* Change numbering style */
+    }
+    li {
+      margin-bottom: 10px; /* Add margin between list items */
+    }
+  &lt;/style&gt;</pre>
+
+  <p><strong>6. Best Practices for Lists:</strong></p>
+  <ul>
+    <li>Use ordered lists for items with a specific sequence or order, and unordered lists for items without a specific order.</li>
+    <li>Keep lists concise and well-organized to enhance readability.</li>
+    <li>Use nested lists to present content hierarchically and improve content structure.</li>
+    <li>Apply appropriate CSS styles to make lists visually appealing and match your website's design.</li>
+    <li>Use semantic list tags to provide meaningful structure and improve accessibility for screen readers.</li>
+  </ul>
+
+  <p><strong>7. Practical Exercises:</strong></p>
+  <ul>
+    <li>Create an ordered list of steps to complete a specific task or tutorial.</li>
+    <li>Build a nested list to organize a collection of related items or categories.</li>
+    <li>Apply custom CSS styles to lists to change bullet or numbering styles and adjust spacing.</li>
+  </ul>
+
+  <p>HTML lists are essential tools for organizing and presenting content in a structured manner. By using ordered and unordered lists, as well as nested lists, you can create well-organized and visually appealing content for your web pages.</p>
+</body>
+</html>

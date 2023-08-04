@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 38: HTML URL Encode</title>
+</head>
+<body>
+  <h1>Module 38: HTML URL Encode</h1>
+
+  <section>
+    <h2>Encoding URLs and Query Parameters in HTML</h2>
+    <p>URLs (Uniform Resource Locators) are used to identify and locate resources on the internet. Sometimes, URLs may contain special characters, such as spaces, symbols, or non-ASCII characters, that cannot be used directly in a URL. To include such characters in a URL, you need to encode them using percent-encoding (URL encoding).</p>
+    <p>URL encoding replaces non-alphanumeric characters with a percentage sign (%) followed by their hexadecimal representation. For example, a space is encoded as "%20," and the dollar sign ($) is encoded as "%24."</p>
+    <p>In HTML, you can use the "encodeURIComponent()" JavaScript function to encode a URL or query parameter before appending it to the URL. This ensures that the URL remains valid and accessible.</p>
+    <pre>
+var searchTerm = "web development";
+var encodedSearchTerm = encodeURIComponent(searchTerm);
+var fullURL = "https://www.example.com/search?q=" + encodedSearchTerm;</pre>
+  </section>
+
+  <section>
+    <h2>Dealing with Special Characters in URLs</h2>
+    <p>When working with URLs, it's essential to handle special characters properly to avoid issues with URL validity and accessibility. Incorrectly encoded URLs can lead to broken links or display errors for users. Always ensure that any user-generated content or dynamic data added to URLs is correctly encoded to prevent potential problems.</p>
+    <p>Additionally, web servers and applications should handle URL decoding on the server-side to interpret encoded data correctly. This ensures that data passed through URLs is processed accurately and securely.</p>
+    <pre>
+// Example URL: https://www.example.com/page?name=John%20Doe%26age%3D30
+var name = "John Doe&age=30";
+var encodedName = encodeURIComponent(name);
+var fullURL = "https://www.example.com/page?name=" + encodedName;</pre>
+  </section>
+
+  <section>
+    <h2>Practical Exercises</h2>
+    <ul>
+      <li>Create a web page with a form that allows users to input search queries.</li>
+      <li>Use JavaScript to encode the search query before appending it to the URL and redirecting users to the search results page.</li>
+      <li>Test the web page with different search queries, including those with special characters, to ensure proper URL encoding and handling.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Your Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>

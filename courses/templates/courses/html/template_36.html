@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 37: HTML Charset</title>
+</head>
+<body>
+  <h1>Module 37: HTML Charset</h1>
+
+  <section>
+    <h2>Understanding Character Encoding</h2>
+    <p>Character encoding is the process of mapping characters to numeric codes that can be stored and interpreted by computers. It is essential for representing text in different languages and character sets. The two most commonly used character encodings on the web are UTF-8 and ISO-8859-1 (also known as Latin-1).</p>
+  </section>
+
+  <section>
+    <h2>The Charset Attribute in HTML</h2>
+    <p>The charset attribute in the meta tag of an HTML document specifies the character encoding used for that document. It helps web browsers interpret and display the text correctly, especially when dealing with special characters and non-ASCII characters found in different languages.</p>
+    <pre>
+&lt;meta charset="UTF-8"&gt;</pre>
+    <p>The above code sets the character encoding of the HTML document to UTF-8, which is the most widely used and recommended encoding for web content.</p>
+  </section>
+
+  <section>
+    <h2>Setting the Appropriate Character Set for Different Languages</h2>
+    <p>When creating multilingual websites, it is crucial to use the appropriate character set to support the languages used in the content. UTF-8 is recommended because it can handle a vast range of characters from various languages, making it suitable for global content.</p>
+    <p>To set the character set for a specific language, you can use the lang attribute on HTML elements that contain text in that language. This helps search engines and screen readers understand the language used in the content, contributing to better accessibility and SEO.</p>
+    <pre>
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My Multilingual Website&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p lang="en"&gt;This is the English version of the content.&lt;/p&gt;
+    &lt;p lang="fr"&gt;Ceci est la version française du contenu.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+  </section>
+
+  <section>
+    <h2>Practical Exercises</h2>
+    <ul>
+      <li>Create a simple web page with text content in different languages and set the appropriate character set for each language.</li>
+      <li>Test the web page in different browsers to ensure that the text displays correctly for each language.</li>
+      <li>Explore the use of special characters from various languages and verify that they are properly encoded and displayed.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Your Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>

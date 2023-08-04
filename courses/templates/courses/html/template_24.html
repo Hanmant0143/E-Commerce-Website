@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 25: HTML Iframes</title>
+</head>
+<body>
+  <h1>Module 25: HTML Iframes</h1>
+
+  <p><strong>1. Introduction to HTML Iframes:</strong></p>
+  <p>An iframe (inline frame) is an HTML element used to embed external content, such as web pages or multimedia, within the current HTML document. Iframes provide a way to include content from other sources while keeping it isolated from the rest of the page's content. This module explores how to use iframes and the various attributes associated with them.</p>
+
+  <p><strong>2. Creating an Iframe:</strong></p>
+  <p>To create an iframe, use the <code>&lt;iframe&gt;</code> element and specify the source URL using the "src" attribute. Here's an example:</p>
+  <pre>&lt;iframe src="https://www.example.com"&gt;&lt;/iframe&gt;</pre>
+  <p>This will embed the content of "https://www.example.com" within the iframe on the current page.</p>
+
+  <p><strong>3. Controlling Iframe Dimensions:</strong></p>
+  <p>You can set the width and height of the iframe using the "width" and "height" attributes, respectively. These attributes accept values in pixels or percentages.</p>
+  <pre>&lt;iframe src="https://www.example.com" width="600" height="400"&gt;&lt;/iframe&gt;</pre>
+
+  <p><strong>4. Adding a Title:</strong></p>
+  <p>Include a descriptive title for the iframe using the "title" attribute. This title will be displayed when the iframe content is not accessible or when users hover over the iframe.</p>
+  <pre>&lt;iframe src="https://www.example.com" title="Example Website"&gt;&lt;/iframe&gt;</pre>
+
+  <p><strong>5. Setting the Target:</strong></p>
+  <p>By default, when a link inside an iframe is clicked, the new content replaces the entire iframe. You can use the "target" attribute to control where the linked content should open.</p>
+  <pre>&lt;iframe src="https://www.example.com" target="_blank"&gt;&lt;/iframe&gt;</pre>
+  <p>This will open the linked content in a new browser tab or window instead of within the iframe.</p>
+
+  <p><strong>6. Security Considerations:</strong></p>
+  <p>When using iframes, be cautious about embedding content from untrusted sources, as it can pose security risks. Ensure that the content you embed is from reliable and secure websites to prevent malicious activities.</p>
+
+  <p><strong>7. Responsive Iframes:</strong></p>
+  <p>To make iframes responsive and adapt to different screen sizes, you can use CSS techniques like setting the "width" to 100% and controlling the aspect ratio using padding or media queries.</p>
+
+  <p><strong>8. Practical Exercises:</strong></p>
+  <ul>
+    <li>Create an iframe that embeds a map from a popular mapping service.</li>
+    <li>Experiment with different iframe dimensions and observe how it affects the displayed content.</li>
+    <li>Add a few iframes to your webpage and set different titles and targets to see how they behave.</li>
+  </ul>
+
+  <p>Iframes offer a powerful way to integrate external content into web pages, enhancing the user experience and providing access to various resources. Understanding the attributes and best practices associated with iframes allows you to use them effectively and securely in your web development projects.</p>
+</body>
+</html>

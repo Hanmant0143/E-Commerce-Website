@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 15: HTML CSS</title>
+</head>
+<body>
+    <h1>Module 15: HTML CSS</h1>
+
+    <h2>1. Introduction to Cascading Style Sheets (CSS):</h2>
+    <p>
+        Cascading Style Sheets, commonly known as CSS, is a style sheet language used to control the presentation and layout of HTML documents. CSS enables you to define styles for HTML elements, such as fonts, colors, spacing, and positioning, without modifying the HTML structure.
+        By separating the presentation from the content, CSS promotes clean, organized, and maintainable code.
+    </p>
+
+    <h2>2. Integrating CSS with HTML:</h2>
+    <p>
+        CSS can be integrated with HTML documents in several ways. The most common methods are:
+    </p>
+    <ul>
+        <li>Inline CSS: Adding CSS styles directly within the HTML elements using the "style" attribute.</li>
+        <li>Internal CSS: Defining CSS styles within the "style" element in the HTML <head> section.</li>
+        <li>External CSS: Linking an external CSS file to the HTML document using the "link" element.</li>
+    </ul>
+    <pre>
+        &lt;!-- Inline CSS --&gt;
+        &lt;p style="color: blue; font-size: 18px;"&gt;This is a paragraph with inline CSS styles.&lt;/p&gt;
+
+        &lt;!-- Internal CSS --&gt;
+        &lt;head&gt;
+            &lt;style&gt;
+                p {
+                    color: blue;
+                    font-size: 18px;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+
+        &lt;!-- External CSS --&gt;
+        &lt;head&gt;
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+        &lt;/head&gt;
+    </pre>
+
+    <h2>3. CSS Selectors:</h2>
+    <p>
+        CSS uses selectors to target HTML elements and apply styles to them. Selectors can be based on element names, class names, IDs, attributes, and more. Understanding CSS selectors is fundamental to styling specific elements or groups of elements.
+    </p>
+    <pre>
+        &lt;!-- Element Selector --&gt;
+        &lt;p&gt;This is a paragraph targeted using the element selector.&lt;/p&gt;
+
+        &lt;!-- Class Selector --&gt;
+        &lt;p class="highlight"&gt;This paragraph has a class selector applied.&lt;/p&gt;
+
+        &lt;!-- ID Selector --&gt;
+        &lt;p id="intro"&gt;This paragraph has an ID selector applied.&lt;/p&gt;
+    </pre>
+
+    <h2>4. CSS Box Model:</h2>
+    <p>
+        The CSS box model is a fundamental concept that defines how elements are structured and sized in CSS. Each element is treated as a rectangular box with four components: content, padding, border, and margin.
+        Understanding the box model is crucial for controlling element size, spacing, and layout on a web page.
+    </p>
+    <pre>
+        &lt;style&gt;
+            .box {
+                width: 200px;
+                height: 100px;
+                padding: 10px;
+                border: 2px solid black;
+                margin: 20px;
+            }
+        &lt;/style&gt;
+
+        &lt;div class="box"&gt;
+            This is a box element with padding, border, and margin.
+        &lt;/div&gt;
+    </pre>
+
+    <h2>5. Advanced Styling with CSS:</h2>
+    <p>
+        CSS provides various advanced styling features, such as:
+    </p>
+    <ul>
+        <li>Font and Text Styling: Controlling font family, size, weight, style, and text alignment.</li>
+        <li>Backgrounds and Gradients: Setting background colors, images, and creating gradient effects.</li>
+        <li>Positioning and Layout: Positioning elements using absolute, relative, and fixed positioning, and creating responsive layouts.</li>
+        <li>Transitions and Animations: Adding smooth transitions and animations to elements for enhanced user experience.</li>
+        <li>Media Queries: Implementing media queries to apply different styles based on the user's device screen size.</li>
+    </ul>
+
+    <h2>6. Practical Application:</h2>
+    <p>
+        Create a simple web page and apply different CSS styles to customize the appearance. Experiment with various selectors and properties to gain hands-on experience with CSS.
+    </p>
+
+    <h2>7. Challenges (For experienced students):</h2>
+    <ul>
+        <li>Create a responsive website layout using media queries to adapt to different screen sizes.</li>
+        <li>Implement CSS animations to add engaging visual effects to elements on a web page.</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 20: HTML Tables</title>
+</head>
+<body>
+  <h1>Module 20: HTML Tables</h1>
+
+  <p><strong>1. Introduction to HTML Tables:</strong></p>
+ <p>Tables in HTML are used to organize and present tabular data in rows and columns. They are valuable for displaying structured information in a clear and visually appealing format. HTML tables consist of the &lt;table&gt; element, which contains one or more rows represented by the &lt;tr&gt; element, and each row contains one or more cells represented by the &lt;td&gt; (data cell) or &lt;th&gt; (header cell) element.</p>
+
+  <p><strong>2. Creating Basic Tables:</strong></p>
+  <p>To create a basic table, use the following structure:</p>
+  <pre>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;th&gt;Header 3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;td&gt;Data 3&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+  <p>Replace "Header 1," "Header 2," and "Header 3" with the column headers, and "Data 1," "Data 2," and "Data 3" with the corresponding data cells.</p>
+
+  <p><strong>3. Merging Cells:</strong></p>
+  <p>You can merge cells in a table to create more complex layouts. To merge cells horizontally, use the "colspan" attribute on a <td> or <th> element, indicating how many columns it should span. To merge cells vertically, use the "rowspan" attribute, indicating how many rows it should span.</p>
+  <pre>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th colspan="2"&gt;Header 2 and 3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;td&gt;Data 3&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+
+  <p><strong>4. Adding Captions:</strong></p>
+  <p>You can include a caption for your table using the <caption> element. The caption provides a brief description of the table's content and its purpose.</p>
+  <pre>&lt;table&gt;
+  &lt;caption&gt;Table Caption&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+
+  <p><strong>5. Applying Styles to Tables:</strong></p>
+  <p>You can use CSS to style your tables and make them visually appealing. Apply styles to elements such as &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; to control colors, borders, spacing, and more.</p>
+ <pre>&lt;style&gt;
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  &lt;/style&gt;</pre>
+
+  <p><strong>6. Best Practices for Tables:</strong></p>
+  <ul>
+    <li>Use tables for displaying tabular data and avoid using them for page layout.</li>
+    <li>Keep tables simple and easy to read, especially when presenting large datasets.</li>
+    <li>Add concise and informative captions to provide context for the table's content.</li>
+    <li>Make sure the table is accessible by providing alternative text for table elements and headers.</li>
+    <li>Test the table's responsiveness on different devices and screen sizes to ensure it displays well.</li>
+  </ul>
+
+  <p><strong>7. Practical Exercises:</strong></p>
+  <ul>
+    <li>Create a table to display a list of products with their names, prices, and descriptions.</li>
+    <li>Experiment with merging cells to create more complex table layouts.</li>
+    <li>Add CSS styles to the table to customize its appearance.</li>
+  </ul>
+
+  <p>HTML tables are powerful tools for organizing and presenting data in a structured format. By understanding how to create tables, merge cells, add captions, and apply styles, you can create visually appealing and informative tables that enhance the overall user experience on your website.</p>
+</body>
+</html>
